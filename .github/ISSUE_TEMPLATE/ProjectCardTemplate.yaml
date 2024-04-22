@@ -38,20 +38,20 @@ body:
       label: Project Phase
       description: Select the phase of the project.
       options:
-        - label: Exploration/ PoC
-        - label: IATA Unit Test
-        - label: IATA Integration Test
-        - label: E2E Pilot Project
-        - label: Live Production
+        - Exploration/ PoC
+        - IATA Unit Test
+        - IATA Integration Test
+        - E2E Pilot Project
+        - Live Production
       
-  - type: textarea
+  - type: input
     id: startDate
     attributes:
       label: Start Date
       description: Select the start date of the project.
       placeholder: Select Date
 
-  - type: textarea
+  - type: input
     id: endDate
     attributes:
       label: End Date

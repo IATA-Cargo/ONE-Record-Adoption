@@ -1,7 +1,7 @@
-name: Bug Report
-description: File a bug report.
-title: "[Bug]: "
-labels: ["bug", "triage"]
+name: ONE Record Test Report
+description: File a test report for the ONE Record standard.
+title: "[Test Report]: "
+labels: ["test report", "triage"]
 projects: ["octo-org/1", "octo-org/44"]
 assignees:
   - octocat
@@ -9,56 +9,104 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Thank you for filing a test report for the ONE Record standard!
+
   - type: input
-    id: contact
+    id: projectName
     attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
-    validations:
-      required: false
+      label: Project Name
+      description: Enter the name of the project.
+      placeholder: Project Name
+
   - type: textarea
-    id: what-happened
+    id: projectObjective
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
-    validations:
-      required: true
-  - type: dropdown
-    id: version
-    attributes:
-      label: Version
-      description: What version of our software are you running?
-      options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-      default: 0
-    validations:
-      required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
+      label: Project Objective
+      description: Describe the objective of the project.
+      placeholder: Project Objective
+
   - type: textarea
-    id: logs
+    id: useCaseObjective
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
+      label: Use Case Objective
+      description: Describe the objective of the use case.
+      placeholder: Use Case Objective
+
+  - type: input
+    id: startDate
+    attributes:
+      label: Start Date
+      description: Select the start date of the project.
+      placeholder: Select Date
+
+  - type: input
+    id: endDate
+    attributes:
+      label: End Date
+      description: Select the end date of the project.
+      placeholder: Select Date
+
+  - type: input
+    id: accountablePerson
+    attributes:
+      label: Accountable Person
+      description: Enter the name of the accountable person.
+      placeholder: Accountable Person
+
+  - type: textarea
+    id: companyInformation
+    attributes:
+      label: Company Information
+      description: Provide details about the company associated with the project.
+      placeholder: Company Information
+
+  - type: input
+    id: standardVersion
+    attributes:
+      label: Standard Version
+      description: Enter the version of the ONE Record standard being used.
+      placeholder: Standard Version
+
   - type: checkboxes
-    id: terms
+    id: oneRecordDataModel
     attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com). 
+      label: ONE Record Data Model
+      description: Select the elements of the ONE Record Data Model.
       options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
+        - label: Airline Core Ontology
+        - label: Shipper's Letter of Instruction
+        - label: Cargo Distribution
+        - label: CO2 Emission
+        - label: Billing & Settlement
+        - label: ULD Tracking
+        - label: Interactive Cargo
+        - label: Dangerous Goods
+        - label: Pharmaceutical
+        - label: Advanced Cargo Information
+        - label: Ground Handling
+
+  - type: checkboxes
+    id: oneRecordAPIFeatures
+    attributes:
+      label: ONE Record API Features
+      description: Select the features of the ONE Record API.
+      options:
+        - label: PUB/SUB
+        - label: LO update
+        - label: Access delegation
+        - label: Security
+        - label: Event
+        - label: Audit train / Versioning
+        - label: Access Control
+        - label: Cascading status update - Pub/Sub in multi chain
+        - label: Data integrity / non repudiation with RDF
+        - label: SHACL shapes
+        - label: IoT updates
+        - label: Rich data
+
+  - type: textarea
+    id: lessonsLearned
+    attributes:
+      label: Lessons Learned
+      description: Provide any lessons learned, challenges, outcomes, or questions.
+      placeholder: Lessons Learned (challenges, outcome, questions)

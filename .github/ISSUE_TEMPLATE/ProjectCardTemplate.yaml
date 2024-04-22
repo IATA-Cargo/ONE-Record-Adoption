@@ -9,7 +9,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you for filing a Project Card for the ONE Record standard!
+        Thank you for filing a test report for the ONE Record standard!
 
   - type: input
     id: projectName
@@ -18,7 +18,7 @@ body:
       description: Enter the name of the project.
       placeholder: Project Name
 
-   - type: textarea
+  - type: textarea
     id: projectObjective
     attributes:
       label: Project Objective

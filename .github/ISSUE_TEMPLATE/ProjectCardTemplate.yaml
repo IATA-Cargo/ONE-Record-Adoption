@@ -37,8 +37,7 @@ body:
     attributes:
       label: Project Phase
       description: Select the phase of the project.
-      options:
-        - Exploration/ PoC
+      options: - Exploration/ PoC
         - IATA Unit Test
         - IATA Integration Test
         - E2E Pilot Project

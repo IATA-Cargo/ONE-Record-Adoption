@@ -11,14 +11,7 @@ body:
       value: |
         Thank you for filing a Project Card for the ONE Record standard!
 
-  - type: input
-    id: projectName
-    attributes:
-      label: Project Name
-      description: Enter the name of the project.
-      placeholder: Project Name
-
-  - type: textarea
+   - type: textarea
     id: projectObjective
     attributes:
       label: Project Objective
@@ -32,14 +25,26 @@ body:
       description: Describe the objective of the use case.
       placeholder: Use Case Objective
 
-  - type: input
+  -type: select
+  id: projectPhase
+  attributes:
+    label: Project Phase
+    description: Select the phase of the project.
+    options:
+      - label: Exploration/ PoC
+      - label: IATA Unit Test
+      - label: IATA Integration Test
+      - label: E2E Pilot Project
+      - label: Live Production
+      
+  - type: datepicker
     id: startDate
     attributes:
       label: Start Date
       description: Select the start date of the project.
       placeholder: Select Date
 
-  - type: input
+  - type: datepicker
     id: endDate
     attributes:
       label: End Date

@@ -1,3 +1,16 @@
+name: ONE Record Project Card Template
+description: File a Project Card for the ONE Record standard.
+title: "[Project Card]: "
+labels: ["Project Card", "triage"]
+projects: ["octo-org/1", "octo-org/44"]
+assignees:
+  - octocat
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for filing a Project Card for the ONE Record standard!
+
   - type: input
     id: projectName
     attributes:

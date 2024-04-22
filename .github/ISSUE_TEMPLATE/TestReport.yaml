@@ -1,16 +1,3 @@
-name: ONE Record Test Report
-description: File a test report for the ONE Record standard.
-title: "[Test Report]: "
-labels: ["test report", "triage"]
-projects: ["octo-org/1", "octo-org/44"]
-assignees:
-  - octocat
-body:
-  - type: markdown
-    attributes:
-      value: |
-        Thank you for filing a test report for the ONE Record standard!
-
   - type: input
     id: projectName
     attributes:

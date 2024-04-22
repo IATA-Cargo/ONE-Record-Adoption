@@ -26,16 +26,16 @@ body:
       placeholder: Use Case Objective
 
   - type: select
-  id: projectPhase
-  attributes:
-    label: Project Phase
-    description: Select the phase of the project.
-    options:
-      - label: Exploration/ PoC
-      - label: IATA Unit Test
-      - label: IATA Integration Test
-      - label: E2E Pilot Project
-      - label: Live Production
+    id: projectPhase
+    attributes:
+      label: Project Phase
+      description: Select the phase of the project.
+      options:
+        - label: Exploration/ PoC
+        - label: IATA Unit Test
+        - label: IATA Integration Test
+        - label: E2E Pilot Project
+        - label: Live Production
       
   - type: datepicker
     id: startDate

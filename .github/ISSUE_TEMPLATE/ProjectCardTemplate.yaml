@@ -25,7 +25,7 @@ body:
       description: Describe the objective of the use case.
       placeholder: Use Case Objective
 
-  -type: select
+  - type: select
   id: projectPhase
   attributes:
     label: Project Phase

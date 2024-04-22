@@ -11,6 +11,14 @@ body:
       value: |
         Thank you for filing a Project Card for the ONE Record standard!
 
+          - type: input
+    id: projectName
+    attributes:
+      label: Project Name
+      description: Enter the name of the project.
+      placeholder: Project Name
+
+
    - type: textarea
     id: projectObjective
     attributes:

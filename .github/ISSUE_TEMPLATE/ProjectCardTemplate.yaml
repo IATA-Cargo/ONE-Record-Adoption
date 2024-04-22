@@ -32,7 +32,7 @@ body:
       description: Describe the objective of the use case.
       placeholder: Use Case Objective
 
-  - type: select
+  - type: dropdown
     id: projectPhase
     attributes:
       label: Project Phase
@@ -44,14 +44,14 @@ body:
         - label: E2E Pilot Project
         - label: Live Production
       
-  - type: datepicker
+  - type: date
     id: startDate
     attributes:
       label: Start Date
       description: Select the start date of the project.
       placeholder: Select Date
 
-  - type: datepicker
+  - type: date
     id: endDate
     attributes:
       label: End Date

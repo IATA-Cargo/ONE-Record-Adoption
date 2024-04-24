@@ -8,8 +8,7 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: |
-        Thank you for filing a test report for the ONE Record standard!
+      value: Thank you for filing a test report for the ONE Record standard!
 
     - type: textarea
     id: projectObjective

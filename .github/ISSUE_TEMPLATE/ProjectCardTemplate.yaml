@@ -8,8 +8,16 @@ assignees:
 body:
   - type: markdown
     attributes:
-      value: Thank you for filing a test report for the ONE Record standard!
+      value: |
+        Thank you for filing a test report for the ONE Record standard!
 
+  - type: input
+    id: projectName
+    attributes:
+      label: Project Name
+      description: Enter the name of the project.
+      placeholder: Project Name
+      
     - type: textarea
     id: projectObjective
     attributes:
